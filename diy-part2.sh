@@ -20,7 +20,7 @@ sed -i '28d' package/network/services/dnsmasq/files/dhcp.conf
 sed -i '28d' package/network/services/dnsmasq/files/dhcp.conf
 #
 # Modify default IP
-sed -i 's/192.168.1.1/10.255.255.99/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.99.1/10.255.255.99/g' package/base-files/files/bin/config_generate
 # Change SSH Prot
 sed -i 's/22/2333/g' package/network/services/dropbear/files/dropbear.config
 # Chenge password
